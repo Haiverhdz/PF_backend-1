@@ -1,0 +1,21 @@
+{
+  "name": "pf_backend1_ch",
+  "version": "1.0.0",
+  "description": "",
+  "main": "/src/app.js",
+  "type": "module",
+  "scripts": {
+    "start": "node --no-warnings ./src/app.js",
+    "dev": "nodemon ./src/app.js"
+  },
+  "keywords": [],
+  "author": "Haiver Alexis Hernandez Castaño",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7",
+    "eslint" : "^8.57.0"
+  }
+}
