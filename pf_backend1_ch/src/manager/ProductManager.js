@@ -41,13 +41,15 @@ export default class ProductManager {
         }
     }
 
+    ;
+    
     async insertOne(data) {
         try {
-            const { title, price, currency, description, stock, code, status, category } = data;
+            const { title, price, currency, description, stock, code, status, category, thumbnail } = data;
 
-            if (!title || !price || !currency || !description || !stock || !code || status === undefined || !category) {
-                throw new ErrorManager("Faltan datos obligatorios", 400);
-            }
+            // if (!title || !price || !currency || !description || !stock || !code || status === undefined || !category) {
+            //     throw new ErrorManager("Faltan datos obligatorios", 400);
+            // }
 
             const product = {
                 id: generateId(await this.getAll()),
@@ -58,7 +60,8 @@ export default class ProductManager {
                 stock, 
                 code, 
                 status: convertToBoolean(status),
-                category
+                category,
+                thumbnail: [],
             };
 
             this.#products.push(product);
@@ -68,7 +71,7 @@ export default class ProductManager {
         } catch (error) {
             throw new ErrorManager(error.message, error.code);
         }
-    }
+    };
 
     async updateOneById(id, data) {
         try {
