@@ -57,23 +57,32 @@ export default class CartManager {
         }
     }
 
-    async addProductOneById(product, cart) {
+    async addProductOneById(productId, cartId) {
         try {
-            const cartFound = await this.#findOneById(cart);
+        
+            const cartFound = await this.#findOneById(cartId);
+    
             if (!cartFound) {
-                throw new ErrorManager(error.message, error.code);
+                throw new ErrorManager('Carrito no encontrado', 404);
             }
-            const newProduct = {
-                id: product,
-                quantity: 1,
-            };
-
-            cartFound.products.push(newProduct);
+    
+            const productInCart = cartFound.products.find(p => p.id === productId);
+    
+            if (productInCart) {
+                productInCart.quantity += 1;
+            } else {
+                const newProduct = {
+                    id: productId,
+                    quantity: 1,
+                };
+                cartFound.products.push(newProduct);
+            }
+    
             await writeJsonFile(paths.files, this.#jsonFilename, this.#carts);
-
+    
             return cartFound;
         } catch (error) {
-            throw new ErrorManager(error.message, error.code);
+            throw new ErrorManager(error.message || 'Error al agregar producto al carrito', error.code || 500);
         }
     }
 
