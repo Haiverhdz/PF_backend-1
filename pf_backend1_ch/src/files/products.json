@@ -1,0 +1,79 @@
+[
+	{
+		"id": 1,
+		"title": "Clock",
+		"price": 200,
+		"currency": "USD",
+		"description": "New",
+		"stock": "available",
+		"code": "12345",
+		"status": "true",
+		"category": "men"
+	},
+	{
+		"id": 3,
+		"title": "Jean",
+		"price": 180,
+		"currency": "USD",
+		"description": "New",
+		"stock": "available",
+		"code": "12347",
+		"status": "true",
+		"category": "men"
+	},
+	{
+		"id": 4,
+		"title": "Shoes",
+		"price": 390,
+		"currency": "USD",
+		"description": "New",
+		"stock": "available",
+		"code": "12348",
+		"status": "true",
+		"category": "women"
+	},
+	{
+		"id": 5,
+		"title": "breeches",
+		"price": 25,
+		"currency": "USD",
+		"description": "New",
+		"stock": "available",
+		"code": "12349",
+		"status": "true",
+		"category": "men"
+	},
+	{
+		"id": 6,
+		"title": "Socks",
+		"price": 15,
+		"currency": "USD",
+		"description": "New",
+		"stock": "available",
+		"code": "12340",
+		"status": "true",
+		"category": "women"
+	},
+	{
+		"id": 7,
+		"title": "Cap",
+		"price": 120,
+		"currency": "USD",
+		"description": "New",
+		"stock": "available",
+		"code": "12343",
+		"status": "true",
+		"category": "men"
+	},
+	{
+		"id": 8,
+		"title": "camiseta",
+		"price": "300",
+		"currency": "USD",
+		"description": "new",
+		"stock": "available",
+		"code": "123458",
+		"status": true,
+		"category": "men"
+	}
+]
