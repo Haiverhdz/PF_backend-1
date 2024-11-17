@@ -8,7 +8,8 @@
 		"stock": "available",
 		"code": "12345",
 		"status": "true",
-		"category": "men"
+		"category": "men",
+		"thumbnail": ""
 	},
 	{
 		"id": 3,
@@ -19,7 +20,8 @@
 		"stock": "available",
 		"code": "12347",
 		"status": "true",
-		"category": "men"
+		"category": "men",
+		"thumbnail": ""
 	},
 	{
 		"id": 4,
@@ -30,7 +32,8 @@
 		"stock": "available",
 		"code": "12348",
 		"status": "true",
-		"category": "women"
+		"category": "women",
+		"thumbnail": ""
 	},
 	{
 		"id": 5,
@@ -41,7 +44,8 @@
 		"stock": "available",
 		"code": "12349",
 		"status": "true",
-		"category": "men"
+		"category": "men",
+		"thumbnail": ""
 	},
 	{
 		"id": 6,
@@ -52,7 +56,8 @@
 		"stock": "available",
 		"code": "12340",
 		"status": "true",
-		"category": "women"
+		"category": "women",
+		"thumbnail": ""
 	},
 	{
 		"id": 7,
@@ -63,7 +68,8 @@
 		"stock": "available",
 		"code": "12343",
 		"status": "true",
-		"category": "men"
+		"category": "men",
+		"thumbnail": ""
 	},
 	{
 		"id": 8,
@@ -74,6 +80,19 @@
 		"stock": "available",
 		"code": "123458",
 		"status": true,
-		"category": "men"
+		"category": "men",
+		"thumbnail": ""
+	},
+	{
+		"id": 9,
+		"title": "gorro",
+		"price": "8888",
+		"currency": "USD",
+		"description": "gorro hombre",
+		"stock": "321",
+		"code": "234",
+		"status": true,
+		"category": "men",
+		"thumbnail": ""
 	}
 ]

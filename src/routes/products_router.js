@@ -1,5 +1,6 @@
 import { Router } from "express";
 import  ProductManager  from "../manager/ProductManager.js";
+import uploader from "../utils/uploader.js";
 
 const router = Router();
 const productManager = new ProductManager();
@@ -20,6 +21,13 @@ router.get ("/:pid",async (req, res)=>{
     } catch (error) {
         res.status(error.code || 500).json({status: "error", message: "error al consultar los productos"});
     }
+});
+
+router.post("/", uploader.single("file"), (req, res)=>{
+    const product = productManager.insertOne(req.body);
+   
+    res.status(201).json({status: "success", product});
+    
 });
 
 

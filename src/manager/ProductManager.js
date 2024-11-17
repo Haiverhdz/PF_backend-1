@@ -58,7 +58,8 @@ export default class ProductManager {
                 stock, 
                 code, 
                 status: convertToBoolean(status),
-                category
+                category,
+                thumbnail: "",
             };
 
             this.#products.push(product);
